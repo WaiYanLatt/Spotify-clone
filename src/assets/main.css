@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-semibold text-white;
+  font-family: "Quicksand", sans-serif;
+  scrollbar-color: #22c55e #f1f1f1;
+  scrollbar-width: thin;
+}
+
+html,
+body,
+#app {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #22c55e;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
