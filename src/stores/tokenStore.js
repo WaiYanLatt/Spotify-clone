@@ -3,7 +3,7 @@ const usetokenStore = defineStore('token' , {
     state : () => {
         return {
             clientId : '8d5e3f7e5b33431385e26346e12f30df',
-            redirectUri :'http://localhost:5173/',
+            redirectUri :'https://spotify-clone-rosy-five.vercel.app/',
             scopes : ['user-read-private', 'user-read-email', 'user-top-read'],
             token : null
         }
