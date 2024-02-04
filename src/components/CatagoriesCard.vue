@@ -15,12 +15,12 @@ export default {
 </script>
 
 <template>
-  <a 
+  <a
     class="w-full h-[170px] p-3 rounded-lg cursor-pointer overflow-hidden"
     href="#"
   >
     <div class="relative">
-      <h1 class="text-md  absolute top-0 left-3">{{ title }}</h1>
+      <h1 class="text-md absolute top-0 left-3">{{ title }}</h1>
       <img
         :src="coverphotoUrl"
         alt=""

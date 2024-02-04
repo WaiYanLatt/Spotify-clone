@@ -1,6 +1,6 @@
 <script>
 export default {
-  emits : ['unShow-bar'],
+  emits: ["unShow-bar"],
   props: {
     show: {
       type: Boolean,
@@ -16,7 +16,10 @@ export default {
     :class="{ 'left-[0%]': this.show === true }"
   >
     <div class="block lg:hidden relative">
-      <button class="bg-green-500 py-3 px-5 rounded-full absolute right-5 top-4" @click="$emit('unShow-bar')">
+      <button
+        class="bg-green-500 py-3 px-5 rounded-full absolute right-5 top-4"
+        @click="$emit('unShow-bar')"
+      >
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>

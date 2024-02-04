@@ -1,14 +1,13 @@
 <script>
-import tokenStore from '@/stores/tokenStore.js'
-   export default {
-        data() {
-           return {
-              tokenStore : tokenStore(),
-           }
-        }
-   }
+import tokenStore from "@/stores/tokenStore.js";
+export default {
+  data() {
+    return {
+      tokenStore: tokenStore(),
+    };
+  },
+};
 </script>
-
 
 <template>
   <footer
@@ -22,7 +21,10 @@ import tokenStore from '@/stores/tokenStore.js'
           credits card needed.
         </p>
       </div>
-      <button class="bg-white lg:w-52 w-52 hidden lg:block lg:px-5 px-3 py-2 text-black rounded-full" @click="tokenStore.authorize()">
+      <button
+        class="bg-white lg:w-52 w-52 hidden lg:block lg:px-5 px-3 py-2 text-black rounded-full"
+        @click="tokenStore.authorize()"
+      >
         Sign Up Free
       </button>
     </div>
