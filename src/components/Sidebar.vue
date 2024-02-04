@@ -13,7 +13,7 @@ export default {
 <template>
   <aside
     class="lg:w-[350px] lg:left-0 left-[-100%] w-full z-20 lg:z-0 transition-all duration-1000 bg-black fixed h-screen p-2"
-    :class="{ 'left-0': this.show === true }"
+    :class="{ 'left-[0%]': this.show === true }"
   >
     <div class="block lg:hidden relative">
       <button class="bg-green-500 py-3 px-5 rounded-full absolute right-5 top-4" @click="$emit('unShow-bar')">
